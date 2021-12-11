@@ -1,38 +1,128 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 50px;
+  z-index: -1;
+}
+.menuIcon {
+  width: 50px;
+  height: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: relative;
+  z-index: 0;
+}
+
+.bigbtn {
+  width: 445px;
+  height: 676px;
+  padding-left: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.itemHide {
+  display: none !important;
+}
+
+.test {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 3 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.testimg {
+  cursor: pointer;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.testin {
+  min-width: 100px;
+  min-height: 100px;
+  z-index: 4 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gh {
+  position: absolute;
+  top: -5px;
+  display: flex;
+  transition: all 0.3s ease-out;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 28px !important;
+  height: 28px !important;
+  background-color: white;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+.bgcl {
+  background-color: #d3f2e3;
+}
+.menuImg {
+  width: 22px;
+}
+
+.msgImg {
+  width: 20px;
+  height: 17px;
+}
+
+.pclImg {
+  width: 18px;
+  height: 18px;
+}
+
+.message {
+  cursor: pointer;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-top: 25px;
+}
+.penbgchange {
+  background: #d3f2e3 0% 0% no-repeat padding-box !important;
+  transition: all 0.3s ease-out;
+}
+.pencil {
+  cursor: pointer;
+  z-index: 5;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  height: 40px;
+  position: relative;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;
+  border-radius: 10px;
+  margin-left: 15px;
+  opacity: 1;
+}
+
+.toplayout {
+  display: flex;
+  align-items: center;
 }
